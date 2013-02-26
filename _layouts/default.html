@@ -1,0 +1,26 @@
+<html>
+	<head>
+		{% include analytics.html %}
+		<title>{{ page.title }} &#8834; geoff.io</title>
+	</head>
+
+	<body>
+		<div id="content">
+			<div id="header">
+				<div id="nav_bar">
+					{% for page in site.pages %}
+						<div class="nav_item">
+							<a href="{{ page.url }}">{{ page.title }}</a>
+						</div>
+					{% endfor %}
+				</div>
+			</div>
+			<div id="content_body">
+				{{ content }}
+			</div>
+			<div id="footer">
+				made by geoff
+			</div>
+		</div>
+	</body>
+</html>

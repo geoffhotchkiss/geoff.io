@@ -1,21 +1,12 @@
-<html>
-	<head>
-		<title>geoff.io</title>
-	</head>
+---
+layout: default
+title: geoff.io
+---
 
-	<body>
-		<div id="body_header">
-			This is in my header.
-		</div>
-
-		<div id="body_content">
-			{% for post in site.posts %}
-				Post title: {{ post.title }}
-			{% endfor %}
-		</div>
-
-		<div id="body_footer">
-			This is my footer.
-		</div>
-	</body>
-</html>
+<div id="posts">
+	<ul>
+		{% for post in site.posts %}
+		<li>{{ post.date | date_to_string }} ~ <a href="{{ post.url }}">{{ post.title }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
