@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>geoff.io</title>
+	</head>
+
+	<body>
+		<div id="body_header">
+			This is in my header.
+		</div>
+
+		<div id="body_content">
+			{% for post in site.posts %}
+				Post title: {{ post.title }}
+			{% endfor %}
+		</div>
+
+		<div id="body_footer">
+			This is my footer.
+		</div>
+	</body>
+</html>
