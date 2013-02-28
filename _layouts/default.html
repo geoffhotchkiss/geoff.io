@@ -6,26 +6,26 @@
 	</head>
 
 	<body>
-		<div id="content">
-			<div id="header">
-				<div id="nav_bar">
-					{% for spage in site.pages %}
-					{% if spage.title == page.title %}
-						<div class="nav_item display_page">
-					{% else %}
-						<div class="nav_item">
-					{% endif %}	
-						<a href="{{ spage.url }}">{{ spage.title }}</a>
-					</div>
-					{% endfor %}
+		<div id="header">
+			<div id="nav_bar">
+				{% sorted_for spage in site.pages sort_by:weight %}
+				<div class="nav_item">
+					<a {% if spage.title == page.title %} class="display_page" {% endif %} href="{{ spage.url }}">{{ spage.title }}</a>
+				</div>
+				{% endsorted_for %}
 				</div>
 			</div>
-			<div id="content_body">
-				{{ content }}
+
+			<div id="content">
+				<div id="content_header">
+				</div>
+				<div id="content_body">
+					{{ content }}
+				</div>
+				<div id="content_footer">
+					made by geoff
+				</div>
 			</div>
-			<div id="footer">
-				made by geoff
-			</div>
-		</div>
-	</body>
-</html>
+
+		</body>
+	</html>
