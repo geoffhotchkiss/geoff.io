@@ -1,0 +1,34 @@
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	font-size: x-large;
+	background-color: #ccc;
+	background-image: url('/static/black-Linen.png');
+}
+
+#content {
+	border-radius: 2px;
+	padding: 10px;
+	background-color: #eee;
+	background-image: url('/static/paper_fibers.png');
+	height: 100%;
+}
+
+.nav_item {
+	display: inline-block;
+	padding: 0px 5px;
+}
+
+.nav_item a:link, .nav_item a:visited {
+	color: green;
+	text-decoration: none;
+}
+
+.display_page {
+	border-left-style: solid;
+	border-right-style: solid;
+	border-radius: 10px;
+	border-width: 2px;
+	margin: 0px -2px;
+}

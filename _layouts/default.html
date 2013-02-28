@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<link rel="stylesheet" type="text/css" href="/css/geoffio.css">
 		{% include analytics.html %}
 		<title>{{ page.title }} &#8834; geoff.io</title>
 	</head>
@@ -8,10 +9,14 @@
 		<div id="content">
 			<div id="header">
 				<div id="nav_bar">
-					{% for page in site.pages %}
+					{% for spage in site.pages %}
+					{% if spage.title == page.title %}
+						<div class="nav_item display_page">
+					{% else %}
 						<div class="nav_item">
-							<a href="{{ page.url }}">{{ page.title }}</a>
-						</div>
+					{% endif %}	
+						<a href="{{ spage.url }}">{{ spage.title }}</a>
+					</div>
 					{% endfor %}
 				</div>
 			</div>
