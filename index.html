@@ -5,9 +5,13 @@ weight: 0
 ---
 
 <div id="posts">
-	<ul>
-		{% for post in site.posts %}
-		<li>{{ post.date | date_to_string }} ~ <a href="{{ post.url }}">{{ post.title }}</a></li>
-		{% endfor %}
-	</ul>
+	{% for post in site.posts %}
+	<div class="post">
+		{% assign datestring = post.date | date_to_string %}
+		{{ datestring }} :: <a href="{{ post.url }}">{{ post.title }}</a> 
+		<div class="post_summary">
+			{{ post.summary }}
+		</div>
+	</div>
+	{% endfor %}
 </div>

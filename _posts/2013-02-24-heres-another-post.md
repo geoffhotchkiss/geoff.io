@@ -2,6 +2,7 @@
 layout: default
 title: Heres another post
 summary: Making my website again, using jekyll again.
+tags: ['hello', 'world', 'fuck']
 ---
 
 # {{ page.title }}
