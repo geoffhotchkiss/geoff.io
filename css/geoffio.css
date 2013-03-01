@@ -6,14 +6,15 @@ body {
 }
 
 #content {
-	margin-left: auto;
-	margin-right: auto;
 	width: 50%;
 	border-radius: 2px;
 	padding: 10px;
 	background-color: #eee;
 	background-image: url('/static/paper_fibers.png');
 	height: 100%;
+	position: fixed;
+	margin-left: 25%;
+	margin-right: 25%;
 }
 
 #header {
@@ -25,9 +26,11 @@ body {
 }
 
 #nav_bar {
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 25%;
+	margin-right: 25%;
+	padding: 0px 10px;
 	width: 50%;
+	min-width: 25em;
 }
 
 .nav_item {
