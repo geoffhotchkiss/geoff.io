@@ -1,11 +1,15 @@
 ---
 layout: default
-title: geoff.io
-weight: 0
+title: posts
+weight: 1
 ---
 
+<div id="post_count">
+	All {{ site.posts | size }} posts:
+</div>
+
 <div id="posts">
-	{% for post in site.posts limit:10 %}
+	{% for post in site.posts %}
 	<div class="post">
 		{% assign datestring = post.date | date_to_string %}
 		<a href="{{ post.url }}">{{ post.title }}</a> 
@@ -17,10 +21,3 @@ weight: 0
 	</div>
 	{% endfor %}
 </div>
-
-{% assign numberofposts = site.posts | size %}
-{% if numberofposts > 10 %}
-<div id="content_footer">
-	Check out <a href="/posts">posts</a> for {{ site.posts | size | minus:10}} more.
-</div>
-{% endif %}

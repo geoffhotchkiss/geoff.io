@@ -14,18 +14,13 @@
 					<a {% if spage.title == page.title %} class="display_page" {% endif %} href="{{ spage.url }}">{{ spage.title }}</a>
 				</div>
 				{% endsorted_for %}
-				</div>
 			</div>
+		</div>
 
-			<div id="content">
-				<div id="content_header">
-				</div>
-				<div id="content_body">
-					{{ content }}
-				</div>
-				<div id="content_footer">
-				</div>
+		<div id="content">
+			<div id="content_body">
+				{{ content }}
 			</div>
-
-		</body>
-	</html>
+		</div>
+	</body>
+</html>
