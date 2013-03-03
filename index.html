@@ -4,19 +4,8 @@ title: geoff.io
 weight: 0
 ---
 
-<div id="posts">
-	{% for post in site.posts limit:10 %}
-	<div class="post">
-		{% assign datestring = post.date | date_to_string %}
-		<a href="{{ post.url }}">{{ post.title }}</a> 
-		<div class="post_metadata">
-			<div class="post_summary">
-				&lfloor; {{ datestring }} :: {{ post.summary }}
-			</div>
-		</div>
-	</div>
-	{% endfor %}
-</div>
+{% assign postlimit = 10 %}
+{% include postlist.html %}
 
 {% assign numberofposts = site.posts | size %}
 {% if numberofposts > 10 %}

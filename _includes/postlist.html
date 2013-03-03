@@ -1,0 +1,18 @@
+{% if postlimit == "all" %}
+	{% assign postlimit = site.posts | size %}
+	Displaying all {{ postlimit }} posts.
+{% endif %}
+
+<ul id="posts">
+	{% for post in site.posts limit:postlimit %}
+	<li class="post">
+		{% assign datestring = post.date | date_to_string %}
+		<a href="{{ post.url }}">{{ post.title }}</a> 
+		<div class="post_metadata">
+			<div class="post_summary">
+				&lfloor; {{ datestring }} :: {{ post.summary }}
+			</div>
+		</div>
+	</li>
+	{% endfor %}
+</ul>
