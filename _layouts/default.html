@@ -3,17 +3,19 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="/css/geoffio.css">
 		{% include analytics.html %}
-		<title>{{ page.title }} &#8834; geoff.io</title>
+		<title>{{ page.title }} &#8838; geoff.io</title>
 	</head>
 
 	<body>
 		<div id="header">
 			<div id="nav_bar">
-				{% sorted_for spage in site.pages sort_by:weight %}
-				<div class="nav_item">
+				<ol id="nav_bar_list">
+					{% sorted_for spage in site.pages sort_by:weight %}
+					<li class="nav_item">
 					<a {% if spage.title == page.title %} class="display_page" {% endif %} href="{{ spage.url }}">{{ spage.title }}</a>
-				</div>
-				{% endsorted_for %}
+					</li>
+					{% endsorted_for %}
+				</ol>
 			</div>
 		</div>
 

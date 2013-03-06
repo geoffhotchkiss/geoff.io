@@ -1,3 +1,62 @@
-body {
-	background-color: red;
+html, body {
+	margin: 0px;
+	min-height: 100%;
+	height: 100%;
+	background-color: #212121;
 }
+
+#header {
+	font-size: 1.5em;
+	padding: 0.25em 0em;
+	padding-bottom: 0.4em;
+	background-color: #FFA200;
+}
+
+#nav_bar {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav_item {
+	display: inline;
+}
+
+#nav_bar_list {
+	margin: 0px;
+	padding: 0px;
+}
+
+#header a {
+	text-decoration: none;
+	font-family: sans-serif;
+	color: white;
+	font-weight: bold;
+}
+
+.display_page {
+	border-bottom-style: solid;
+	border-bottom-color: #212121; 
+	border-width: 0.15em;
+}
+
+#content {
+	width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	background-image: url('/static/paper_fibers.png');
+	border-radius: 0.5em;
+	padding: 0em 5em;
+}
+
+#posts {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+.post {
+}
+
+
