@@ -5,8 +5,6 @@ summary: Making my website again, using jekyll again.
 tags: ['hello', 'world', 'fuck']
 ---
 
-# {{ page.title }}
-
 Here I go again, making this website. 
 
 Using jekyll again.

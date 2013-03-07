@@ -5,11 +5,10 @@ weight: 0
 ---
 
 {% assign postlimit = 10 %}
+{% assign displaypostcontent = true %}
 {% include postlist.html %}
 
 {% assign numberofposts = site.posts | size %}
-{% if numberofposts > 10 %}
 <div id="content_footer">
-	Check out <a href="/posts">posts</a> for {{ site.posts | size | minus:10}} more.
+	<a href="/posts.html">&infin;</a>
 </div>
-{% endif %}

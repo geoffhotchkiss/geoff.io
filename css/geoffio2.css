@@ -2,18 +2,16 @@ html, body {
 	margin: 0px;
 	min-height: 100%;
 	height: 100%;
-	background-color: #212121;
 }
 
 #header {
 	font-size: 1.5em;
-	padding: 0.25em 0em;
-	padding-bottom: 0.4em;
+	padding: 1em 0em;
 	background-color: #FFA200;
 }
 
 #nav_bar {
-	width: 700px;
+	width: 750px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -41,13 +39,20 @@ html, body {
 }
 
 #content {
-	width: 700px;
+	width: 750px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 1em 5em;
 	background-color: white;
-	background-image: url('/static/paper_fibers.png');
-	border-radius: 0.5em;
-	padding: 0em 5em;
+}
+
+#content_footer {
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #8C8373;
 }
 
 #posts {
@@ -56,7 +61,34 @@ html, body {
 	list-style: none;
 }
 
-.post {
+h1 {
+	font-size: 2em;
 }
 
+.post {
+	border-style: solid;
+	border-color: #212121;
+	border-radius: 10px;
+	padding: 0em 1em;
+	margin-bottom: 1em;
+}
 
+.post_title {
+	font-size: 3em;
+}
+
+.post_summary {
+	color #291A00;
+	color green;
+}
+
+#all_post_list {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+.all_post_list_title {
+	color: #8C8373;
+	font-size: 2em;
+}
