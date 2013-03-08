@@ -38,12 +38,13 @@ html, body {
 	border-width: 0.15em;
 }
 
-#content {
+#content_body {
 	width: 750px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em 5em;
 	background-color: white;
+	font-family: 'Merriweather', serif;
 }
 
 #content_footer {
@@ -52,7 +53,7 @@ html, body {
 
 a {
 	text-decoration: none;
-	color: #8C8373;
+	color: #140D00;
 }
 
 #posts {
@@ -61,25 +62,21 @@ a {
 	list-style: none;
 }
 
-h1 {
-	font-size: 2em;
-}
-
 .post {
 	border-style: solid;
 	border-color: #212121;
 	border-radius: 10px;
 	padding: 0em 1em;
 	margin-bottom: 1em;
+	background-color: #FCFCFC;
 }
 
 .post_title {
-	font-size: 3em;
+	font-size: 2em;
 }
 
 .post_summary {
-	color #291A00;
-	color green;
+	font-size: 0.8em;
 }
 
 #all_post_list {
@@ -90,5 +87,5 @@ h1 {
 
 .all_post_list_title {
 	color: #8C8373;
-	font-size: 2em;
+	font-size: 1.2em;
 }
