@@ -28,7 +28,7 @@ html, body {
 
 #header a {
 	text-decoration: none;
-	font-family: sans-serif;
+	font-family: 'Merriweather Sans', sans-serif;
 	color: white;
 	font-weight: bold;
 }
@@ -39,12 +39,15 @@ html, body {
 	border-width: 0.15em;
 }
 
+#content {
+	font-family: 'Merriweather', serif;
+}
+
 #content_body {
 	width: 750px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 1em 5em;
-	font-family: 'Merriweather', serif;
 }
 
 #content_footer {
@@ -66,7 +69,7 @@ a {
 	border-style: solid;
 	border-color: #212121;
 	border-radius: 10px;
-	padding: 0em 1em;
+	padding: 0.5em 1em;
 	margin-bottom: 1em;
 	background-color: #FCFCFC;
 }
@@ -80,7 +83,6 @@ a {
 }
 
 #all_post_list {
-	padding: 0px;
 	margin: 0px;
 	list-style: none;
 }
